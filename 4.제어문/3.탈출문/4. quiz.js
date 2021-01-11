@@ -19,21 +19,19 @@ while (true) {
    
    //0 이상 101미만
    var firstNumber = Math.floor(Math.random() * 101);
-   var secondNumber = Math.floor(Math.random() * 101);
-
-   
+   var secondNumber = Math.floor(Math.random() * 101);   
 
    //랜덤 숫자 0,1 이 등장하도록 변수 선언.
    //0: +, 1: - 
    var operatorNumber = Math.floor(Math.random() * 2);
 
    //랜덤 연산자 기호 만들기
-   // var opratorMark = (operatorNumber === 0) ? '+' : '-';
-   var opratorMark;
+   // var operatorMark = (operatorNumber === 0) ? '+' : '-';
+   var operatorMark;
    if (operatorNumber === 0) {
-      opratorMark = '+';
+      operatorMark = '+';
    } else {
-      opratorMark = '-';
+      operatorMark = '-';
    }
 
    // 실제 정답
@@ -45,7 +43,7 @@ while (true) {
    }
 
    // 일단 사용자가 입력한 답안
-   var userAnswser = +prompt(`${firstNumber} ${opratorMark} ${secondNumber} = ??`);
+   var userAnswser = +prompt(`${firstNumber} ${operatorMark} ${secondNumber} = ??`);
    // alert(typeof userAnswser);
    
    if (userAnswser === 0) {
