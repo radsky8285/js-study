@@ -17,8 +17,13 @@ var scores = [98, 32, 66, 87, 49, 12, 100, 82, 100];
 //총점 저장 변수
 var total = 0;
 
+/*
 for (var i = 0; i < scores.length; i++) {
     total += scores[i];
+}
+*/
+for (var score of scores) {
+    total += score;
 }
 
 //평균 저장 변수
