@@ -70,6 +70,7 @@ function checkCountDown(countDown) {
     }
 }
 
+
 //핵심 실행 로직
 (function () {
     alert('[UP & DOWN 게임 - 1~100사이의 숫자를 맞춰보세요!]');
